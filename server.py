@@ -56,7 +56,6 @@ def decryption(pkg,f):
 class socket_server:
     def __init__(self, f, s, s_addr, buff_size, socket_pwd):
         self.f = f 
-        self.x = x
         self.buff_size = buff_size
         self.socket_pwd = socket_pwd
 

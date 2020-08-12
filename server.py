@@ -12,8 +12,6 @@ from colorama import Fore,Style,init
 
 #other variables
 crash = False 
-x = 0
-errors = 0
 buff_size = 1048
 socket_pwd = '/mnfncal!()OA='
 
@@ -56,7 +54,7 @@ def decryption(pkg,f):
 #
 
 class socket_server:
-    def __init__(self, f, x, s, s_addr, buff_size, socket_pwd,errors):
+    def __init__(self, f, s, s_addr, buff_size, socket_pwd):
         self.f = f 
         self.x = x
         self.buff_size = buff_size
@@ -145,7 +143,7 @@ class socket_server:
 #MAIN
 while (crash != True):
     try:
-        server = socket_server(f, x, s, s_addr, buff_size, socket_pwd,errors)
+        server = socket_server(f, s, s_addr, buff_size, socket_pwd)
         server.create_socket()
         server.run_server()
     except KeyboardInterrupt:

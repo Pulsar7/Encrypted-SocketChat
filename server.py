@@ -1,3 +1,10 @@
+#
+#   Autor: Pulsar 
+#   GitHub: https://github.com/Woodnet
+#   Datum: 12.08.2020
+#   Python-Version: 3.8.2
+#   SERVER
+#
 import socket,time,sys 
 from cryptography.fernet import Fernet 
 from datetime import datetime 
